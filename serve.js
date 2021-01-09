@@ -21,7 +21,7 @@ app.post('/predict', async (req, res, next) => {
 });
 
 app.post('/test', async (req, res, next) => {
-  return res.json("edited-1");
+  return res.json("edited-2");
 });
 
 app.listen(port, async () => {
