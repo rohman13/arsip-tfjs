@@ -39,7 +39,6 @@ const init = async () => {
 
 
 const runApp = async (initializer, title) => {
-  console.log(initializer);
   const encoded = await initializer.useModel.embed(title.toLowerCase());
   const prediction = await initializer.model.predict(encoded).array();
 
