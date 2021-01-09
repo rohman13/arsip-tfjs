@@ -15,7 +15,7 @@ app.get("/url", (req, res, next) => {
   return res.json("test");
 });
 
-app.use(cors());
+app.use(cors({origin: true}));
 app.post('/predict', async (req, res, next) => {
   const test = await runApp.runApp(init, req.body.title)
   return res.json(test);
